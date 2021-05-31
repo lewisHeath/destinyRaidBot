@@ -4,10 +4,14 @@ from dotenv import load_dotenv
 
 
 client=discord.Client()
+load_dotenv()
 
-TOKEN = 'ODQ4OTIxNjA5Mjc5NjM1NDY2.YLTp2w.YhVWxmZzhi3TTfKEHB6XiiNgydw'
+# TOKEN = 'ODQ4OTIxNjA5Mjc5NjM1NDY2.YLTp2w.YhVWxmZzhi3TTfKEHB6XiiNgydw'
+TOKEN = os.getenv('TOKEN')
+print(TOKEN)
 day = "<testDay>"
 time = "<testTime>"
+
 
 @client.event
 async def on_message(message):
