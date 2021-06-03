@@ -1,2 +1,2 @@
-# destinyRaidBot\
+# destinyRaidBot
 code in lewBot folder
